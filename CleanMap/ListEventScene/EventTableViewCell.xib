@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" id="8WZ-J0-3pP" customClass="EventTableViewCell" customModule="CleanMap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8WZ-J0-3pP" id="ip0-B4-7hh">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VIB-Be-XV0">
+                        <rect key="frame" x="20" y="16" width="335" height="119.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Warm up and greetings with each other-Chat the link between Quality and ML" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTo-8A-NJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Gemba Lean Internet of Things and Bi Data Meetup Taiwan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPD-qa-6FF">
+                                <rect key="frame" x="0.0" y="45" width="335" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="今天 下午 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpg-Hc-Opy">
+                                <rect key="frame" x="0.0" y="82.5" width="335" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MR.BROWN 伯朗咖啡館(小巨蛋店)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-4m-qk3">
+                                <rect key="frame" x="0.0" y="103.5" width="335" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jaz-05-Gov" customClass="RsvpView" customModule="CleanMap" customModuleProvider="target">
+                        <rect key="frame" x="20" y="143.5" width="335" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="JeJ-GR-gqI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_numberOfAvator">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VIB-Be-XV0" firstAttribute="leading" secondItem="ip0-B4-7hh" secondAttribute="leading" constant="20" id="DoG-oh-8iE"/>
+                    <constraint firstItem="Jaz-05-Gov" firstAttribute="top" secondItem="VIB-Be-XV0" secondAttribute="bottom" constant="8" id="I54-fB-kH7"/>
+                    <constraint firstItem="Jaz-05-Gov" firstAttribute="trailing" secondItem="VIB-Be-XV0" secondAttribute="trailing" id="R5u-sM-086"/>
+                    <constraint firstItem="VIB-Be-XV0" firstAttribute="top" secondItem="ip0-B4-7hh" secondAttribute="top" constant="16" id="XU0-yX-m5l"/>
+                    <constraint firstAttribute="bottom" secondItem="Jaz-05-Gov" secondAttribute="bottom" constant="16" id="kUn-21-QPS"/>
+                    <constraint firstAttribute="trailing" secondItem="VIB-Be-XV0" secondAttribute="trailing" constant="20" id="rbS-8h-wmY"/>
+                    <constraint firstItem="Jaz-05-Gov" firstAttribute="leading" secondItem="VIB-Be-XV0" secondAttribute="leading" id="tyb-F0-c5E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateTimeLabel" destination="Xpg-Hc-Opy" id="9gC-zx-XF6"/>
+                <outlet property="groupNameLabel" destination="bPD-qa-6FF" id="AWy-Cb-y0X"/>
+                <outlet property="nameLabel" destination="PTo-8A-NJ7" id="lJm-GO-lKI"/>
+                <outlet property="rsvpView" destination="Jaz-05-Gov" id="t24-7u-gVA"/>
+                <outlet property="rsvpViewHeightLayout" destination="JeJ-GR-gqI" id="Nzy-q9-DWL"/>
+                <outlet property="rsvpViewTopVerticalLayout" destination="I54-fB-kH7" id="gBN-0c-Agd"/>
+                <outlet property="venueNameLabel" destination="wjZ-4m-qk3" id="8E4-du-Qg6"/>
+            </connections>
+            <point key="canvasLocation" x="88.5" y="427"/>
+        </tableViewCell>
+    </objects>
+</document>
