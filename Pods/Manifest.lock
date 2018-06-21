@@ -16,6 +16,7 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - SwiftSoup (1.7.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - Kingfisher
   - KRPullLoader
   - R.swift
+  - SwiftSoup
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -54,8 +56,9 @@ SPEC CHECKSUMS:
   KRPullLoader: b45266f518ba8affa572141b335d5d30425b58c0
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 34f4845404bb48feac50d9711986e6f956cba241
+PODFILE CHECKSUM: 7ca500f66184ca46db228b9d35229429766b92ea
 
 COCOAPODS: 1.4.0

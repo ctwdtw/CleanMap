@@ -31,16 +31,14 @@ class ListEventsInteractor: ListEventsBusinessLogic, ListEventsDataStore {
     worker?.fetchEvents(request: request, completion: { (eventsResult) in
       typealias Response = ListEvents.FetchEvents.Response
       
-      guard let newFetchedEvents = eventsResult.value else {
-        print("some error occur, make sure you have your api keys entered...")
-        //TODO:// error handling
-        let response = Response(events: [], error: nil)
+      guard eventsResult.isSuccess else {
+        let response = Response(events: nil, error: eventsResult.error)
         self.presenter?.presentFetchedEvents(response: response)
         return
       }
+      
+      let newFetchedEvents = eventsResult.value!
       self.fetchedEvents += newFetchedEvents
-      
-      
       let response = Response(events: eventsResult.value!, error: nil)
       self.presenter?.presentFetchedEvents(response: response)
       

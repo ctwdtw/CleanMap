@@ -26,7 +26,7 @@ pod 'GooglePlaces'
 
   #web scraping
   #pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna'
-  #pod 'SwiftSoup'
+  pod 'SwiftSoup'
   #pod 'Ji'
   
   # networklayer

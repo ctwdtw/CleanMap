@@ -1,0 +1,28 @@
+{
+  "name": "cleanmap",
+  "version": "1.0.0",
+  "description": "## Screenshots ![Alt text](/Screenshots/listevents.png?raw=true \"List Events\") ![Alt text](/Screenshots/detailedEvents.png?raw=true \"PLStrechyVC Demo\") # CleanMap",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctwdtw/CleanMap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctwdtw/CleanMap/issues"
+  },
+  "homepage": "https://github.com/ctwdtw/CleanMap#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
